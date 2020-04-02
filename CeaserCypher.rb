@@ -1,9 +1,8 @@
-alpha = []
-for i in "A".."Z"
-  alpha << i
-end
-
 def CeaserEncrypt(shiftValue, msg)
+  alpha = []
+  for i in "A".."Z"
+    alpha << i
+  end
   cypher = []
   words = msg.upcase.split(' ')
   for i in 0..words.length-1
@@ -28,6 +27,10 @@ def CeaserEncrypt(shiftValue, msg)
 end
 
 def CeaserDecrypt(shiftValue, msg)
+  alpha = []
+  for i in "A".."Z"
+    alpha << i
+  end
   cypher = []
   words = msg.upcase.split(' ')
   for i in 0..words.length-1
